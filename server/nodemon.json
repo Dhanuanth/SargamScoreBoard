@@ -1,0 +1,7 @@
+{ 
+    "env":{
+        "DB_USER":"dhanuanth",
+        "DB_PASSWORD":"he6HHbpv3b6oKBmQ",
+        "DB_NAME":"datas"
+    }
+}

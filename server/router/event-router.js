@@ -1,12 +1,15 @@
 
 const Express = require('express');
-const {getHouse, getEvent, updateEventPoints} = require('../controller/event-controller.js')
+const {getAllHouses, getHouse,getEvent, updateEventPoints,getAllEvents} = require('../controller/event-controller.js')
+const mongoPractice = require('../mongo.js');
 
 const router = Express.Router();
 
-router.get('/:hid',getHouse)
-router.get('/:hid/:eid',getEvent)
-router.patch('/event/:eid',updateEventPoints)
+router.get('/houses',mongoPractice.getAllHouses);
+router.get('/events',mongoPractice.getAllEvents);
+
+
+//router.patch('/admin/:eid',updateEventPoints)
 
 
 module.exports = router;
